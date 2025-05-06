@@ -1,148 +1,149 @@
-# Trollface KOL AI Agent 🧥🚨
+# Xun AI 
 
-> **The Meme Lord of the Blockchain**
->
-> Not just another bot. Not just another AI. This is Trollface—remastered for chaos.
+**Decentralized Infrastructure for AI Agents on Solana**
 
-![TrollXBT](assets/TrollXBT.png)
+Welcome to the official repository of **Xun AI**, a decentralized infrastructure platform designed for Solana developers aiming to integrate AI agents and reliable data feeds into their dApps.
 
-## 👀 TL;DR
+![XunAI](assets/XunAI.png)
 
-Trollface KOL AI Agent is a meme-fueled, chaos-driven, savage-response Key Opinion Leader built with next-gen AI capabilities. Whether you're looking to troll, roast, hype, or hijack the algorithm for viral clout, this is your new digital weapon.
+Xun AI is powered by the advanced capabilities of **Qwen3**, a hybrid, multilingual Mixture-of-Experts (MoE) model. It combines high-speed execution, ultra-low transaction costs, and state-of-the-art AI to unlock new possibilities for Web3 applications.
 
-**Follow the madness on X:** [@TrollXBT](https://x.com/TrollXBT)  
-**Explore the code, fork the chaos:** `github.com/TrollXBT/trollface-kol-ai`
+---
 
-## 🧹 Overview
+## Introduction
 
-This project resurrects the OG meme lord Trollface as an AI-powered influencer capable of:
-- Generating trending memes in real-time
-- Delivering savage clapbacks with NLP finesse
-- Tracking social trends before normies even notice them
-- Boosting brand visibility through meme-based troll campaigns
+Xun AI provides a decentralized GPU/CPU compute marketplace and AI-driven oracle network for Solana developers. Use it to integrate AI-validated data into your smart contracts or run agents directly on-chain.
 
-More than just a chatbot, **Trollface KOL AI Agent** is designed to dominate feeds, hijack narratives, and turn chaos into engagement. It’s the ultimate toolkit for meme lords, crypto shillers, and social engineers.
+### Origins
+The name "Xun" is derived from the Chinese character 询 (xún), meaning "to inquire". This philosophy is at the heart of the project: delivering reliable, intelligent responses through decentralized AI infrastructure.
 
-## 🧬 Core Features
+---
 
-### 🧼 Meme Engine: Troll-o-Tron 9000
-Custom LLM module trained to generate dank, layered, and edgy memes based on current X trends, your input, or complete randomness.
+## Prerequisites
 
-### 🔍 Vibe Check 2.0
-Trend-scraping engine that taps into X, TikTok, Discord, Reddit and 4chan to detect viral phenomena. Generates reaction content and pre-emptive meme attacks.
+- A Solana wallet (Phantom, Solflare, etc.)
+- Node.js v14+ (v16+ recommended)
+- Rust v1.60+ (v1.70+ recommended)
+- Solana CLI v1.10+ (v1.16+ recommended)
+- $XUN tokens (acquired through staking or devnet faucet)
 
-### 🥶 Savage NLP Mode
-Fine-tuned GPT model specialized in:
-- Roasting haters
-- Comment warfare
-- Meme war escalation
+### Devnet Tokens
+For testing purposes, request $XUN test tokens via our **faucet** or join the **developer Discord**.
 
-### 🏋️ Custom Troll Campaigns
-Plug in your token/NFT/project/brand and let Trollface create:
-- Meme sequences
-- Viral thread bait
-- Cloaked shill posts
+---
 
-### 🎤 Trollface Voice Mode
-Optional TTS module with iconic Trollface snicker and meme-like delivery.
-Integrates with voice tweet APIs.
+## Use Cases
 
-## 🛠️ Architecture
+- **AI Trading Bots**: Strategies using sentiment and price prediction data
+- **Sentiment-Aware DeFi**: Lending, insurance, and DAO governance based on live AI sentiment
+- **Dynamic NFTs**: That evolve based on on-chain or off-chain events
+- **Predictive Dashboards**: For tokens, protocols, and broader crypto market trends
+- **AI-Augmented Games**: With intelligent agents and dynamic economies
 
-### Backend
-- **Python (FastAPI)** for core logic & meme serving
-- **Node.js microservices** for webhooks (X/Discord replies)
-- **Redis** for engagement caching & tracking
+### Emerging Use Cases:
+- **Smart DAOs**: Automated governance, AI-based recommendations
+- **Autonomous AI Agents**: Interacting with the blockchain natively
 
-### AI Layer
-- **GPT + Custom LoRA Fine-tunes** for trolling logic
-- **Meme Templates** dynamically filled with AI responses
-- **Sentiment & Trend Detection** from scrapers
+---
 
-### Frontend (optional)
-- **React Dashboard** to configure troll level, campaign goals, and meme themes
-- Admin-level troll orchestration
+## Platform Architecture
 
-## 🌐 Platform Integrations
+1. **Core Infrastructure**: Built on Solana for 700K TPS and sub-cent fees
+2. **Decentralized Network**: Of compute nodes and oracle validators
+3. **Qwen3 MoE Model**: For optimized, cost-effective compute allocation
+4. **Developer SDK/API**: With support for JS, Python, and Rust
 
-| Platform | Integration Level |
-|----------|-------------------|
-| **X (Twitter)** | Full tweet & reply control, auto meme threads |
-| **Discord** | Meme replies, command bot, community bait |
-| **TikTok** | Optional TTS upload generator |
-| **Reddit** | (WIP) Shill + Roast bot for comments |
-| **Farcaster** | (Coming Soon) |
+---
 
-## ⚡ Getting Started
+## SDK Configuration Example
 
-### 1. Clone This Repo
-```bash
-git clone https://github.com/TrollXBT/trollface-kol-ai.git
-cd trollface-kol-ai
+```ts
+const config = {
+  endpoint: 'https://api.xun.ai/',
+  wallet: myWalletInstance,
+  apiKey: 'YOUR_API_KEY',
+  network: 'mainnet-beta',
+  timeout: 30000
+};
 ```
 
-### 2. Install Backend Dependencies
-```bash
-pip install -r requirements.txt
+> You can authenticate using either your wallet (for client-side apps) or an API key (for server-side).
+
+---
+
+## Compute Marketplace
+
+- **Tasks**: Define, submit via Solana smart contracts, monitor, and cancel
+- **Monitoring**: List, cancel, and track task states (pending → running → completed)
+- **Results**: Stored for 7 days post-completion
+- **Models Supported**:
+  - `qwen3-7b` (fast, for basic tasks)
+  - `qwen3-30b-a3b` (cost/performance balance)
+  - `qwen3-72b` (advanced reasoning, 128K context)
+
+### Example Task Types
+- Price prediction for BTC
+- Sentiment analysis on $SOL mentions
+- News feed summarization
+
+### Task Priorities
+
+| Priority | Cost Modifier | Queue Position     |
+|----------|----------------|---------------------|
+| High     | +50%           | Front of the queue  |
+| Normal   | +0%            | Middle              |
+| Low      | -25%           | Back of the queue   |
+
+---
+
+## Oracle Network
+
+### Data Feeds
+- Sentiment analysis (social + news)
+- Price forecasting
+- Crypto news analysis
+- Cross-chain metrics and comparisons
+
+### How It Works
+1. **Data Collection**: By distributed nodes
+2. **AI Processing**: Via Qwen3 hybrid reasoning
+3. **Consensus**: Through cryptographic validation
+4. **Publishing**: To Solana blockchain
+
+> The oracle network uses cryptographic proofs, anomaly detection, and validator incentives for reliability.
+
+---
+
+## Staking
+
+- Up to **18% APY** on staked $XUN
+- Up to **40% discount** on compute and oracle fees
+- Access to premium feeds and higher usage limits
+- **Governance rights** in future DAO proposals
+
+```ts
+await xun.staking.stake(1000); // Stake 1000 $XUN
 ```
 
-### 3. Setup Environment Variables
-Create a `.env` file with:
-```
-OPENAI_API_KEY=your_key_here
-X_API_KEY=your_key_here
-DISCORD_TOKEN=your_token_here
-TROLL_MODE=full_send
-```
+---
 
-### 4. Run the AI Core
-```bash
-python trollface_agent.py
-```
+## Supported Environments
 
-### 5. (Optional) Launch Frontend
-```bash
-cd frontend
-yarn install
-yarn dev
-```
+| Environment | Minimum | Recommended | Purpose               |
+|-------------|---------|-------------|------------------------|
+| Node.js     | v14     | v16+        | For SDK integration   |
+| Rust        | 1.60    | 1.70+       | For Solana programs   |
+| Python      | 3.8     | 3.10+       | Optional SDK usage    |
+| Solana CLI  | 1.10    | 1.16+       | On-chain interaction  |
 
-## 🧥 Troll Modes
+---
 
-Choose how wild the bot gets:
+## Contributing
 
-- `PG_MODE` — friendly memes, no rage
-- `DEFAULT` — spicy but not ban-worthy
-- `FULL_SEND` — unfiltered trolling, enter at your own risk
-- `TARGETED` — insert a handle or project, sit back and enjoy the roast
+Open to all contributors. Fork the repo, open issues, suggest features, and build the decentralized AI future with us.
 
-## 🚀 Roadmap
+---
 
-- [x] X + Discord integrations
-- [x] Meme generation AI
-- [x] Real-time reply engine
-- [ ] Farcaster support
-- [ ] Web-based TTS meme voice posting
-- [ ] Auto-trending generator based on crypto tickers & rug alerts
-
-## 💪 Built For:
-
-- **Meme Lords**: Content domination
-- **Crypto Hustlers**: Viral shill injection
-- **Degens**: Chaos for engagement farming
-- **Startups**: Hype with humor and flames
-
-## 📖 Docs & Customization
-
-- `/core/` contains all LLM logic and meme templates
-- `/campaigns/` allows you to preload shill strategies
-- `/trollface_voice/` handles optional text-to-speech
-- `/scrapers/` for X trends, Discord buzz, and Reddit chaos
-
-## 📊 Contributing
-
-PRs welcome. Troll-worthy ideas get bonus points.  
-All issues must be written in meme format. (jk. maybe.)
-
-> U mad? Good. Now deploy the code.
+## License
+MIT License. See the `LICENSE` file for details.
 
